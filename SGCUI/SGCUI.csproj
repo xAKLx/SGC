@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8320191A-F258-4EB4-A523-4BC9851FBA79}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGCUI</RootNamespace>
+    <AssemblyName>SGCUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesAgentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesAgentes.Designer.cs">
+      <DependentUpon>ClientesAgentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_Box_OK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Box_OK.Designer.cs">
+      <DependentUpon>Dialog_Box_OK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_Form_Closing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Form_Closing.Designer.cs">
+      <DependentUpon>Dialog_Form_Closing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargas.Designer.cs">
+      <DependentUpon>Cargas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen.Designer.cs">
+      <DependentUpon>Almacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="empleadosUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empleadosUsuarios.Designer.cs">
+      <DependentUpon>empleadosUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Furgon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Furgon.Designer.cs">
+      <DependentUpon>Furgon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlmacenCarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlmacenCarga.Designer.cs">
+      <DependentUpon>AlmacenCarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FurgonCarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FurgonCarga.Designer.cs">
+      <DependentUpon>FurgonCarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Init.Designer.cs">
+      <DependentUpon>Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListForm.Designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUI.Designer.cs">
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen.resx">
+      <DependentUpon>Almacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlmacenCarga.resx">
+      <DependentUpon>AlmacenCarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientesAgentes.resx">
+      <DependentUpon>ClientesAgentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog_Box_OK.resx">
+      <DependentUpon>Dialog_Box_OK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog_Form_Closing.resx">
+      <DependentUpon>Dialog_Form_Closing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empleadosUsuarios.resx">
+      <DependentUpon>empleadosUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargas.resx">
+      <DependentUpon>Cargas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Furgon.resx">
+      <DependentUpon>Furgon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FurgonCarga.resx">
+      <DependentUpon>FurgonCarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Init.resx">
+      <DependentUpon>Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListForm.resx">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUI.resx">
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+    <None Include="Resources\SYNCRO Logo.png" />
+    <None Include="Resources\themify_e66d%280%29_1024.png" />
+    <None Include="Resources\themify_e60f%280%29_1024.png" />
+    <None Include="Resources\themify_e717%280%29_1024.png" />
+    <None Include="Resources\octicons_f0c4%280%29_1024.png" />
+    <None Include="Resources\Entypo_d83d%280%29_1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SGCBLL\SGCBLL.csproj">
+      <Project>{851d411c-a65c-47e1-ba9a-29f0291a2fca}</Project>
+      <Name>SGCBLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
